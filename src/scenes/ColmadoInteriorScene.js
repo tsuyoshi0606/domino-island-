@@ -42,13 +42,14 @@ export class ColmadoInteriorScene extends Phaser.Scene {
     this.add.text(640, 640, 'E / ESC  ·  SALIR AL BARRIO', {fontFamily:'monospace',fontSize:'14px',color:'#fff2d0',backgroundColor:'#8b352b',padding:{x:10,y:6}}).setOrigin(0.5);
     this.add.text(640, 680, 'WASD / FLECHAS: CAMINAR  ·  MOSTRADOR Y ESTANTERÍAS DEL COLMADO', {fontFamily:'monospace',fontSize:'10px',color:'#dfcfaa'}).setOrigin(0.5);
     this.exitButton=document.createElement('button');this.exitButton.type='button';this.exitButton.className='game-prompt';this.exitButton.textContent='[E / ESC] SALIR AL BARRIO';this.exitButton.hidden=true;
-    this.exitButton.addEventListener('click',()=>{if(this.player?.y>500)this.scene.start('ExteriorScene');});document.querySelector('#game').append(this.exitButton);
+    this.exitButton.addEventListener('click',()=>{if(this.player?.y>500)this.scene.start('ExteriorScene',{from:'colmado'});});document.querySelector('#game').append(this.exitButton);
     this.events.once('shutdown',()=>this.exitButton.remove());
     this.player = this.add.container(640, 548); this.drawPlayer(this.player);
     this.keys = this.input.keyboard.addKeys('W,A,S,D,UP,DOWN,LEFT,RIGHT,ESC,E');
     this.input.keyboard.on('keydown', this.handleExitKey, this);
     this.prompt = this.add.text(640, 510, '[E] SALIR', {fontFamily:'monospace',fontSize:'13px',color:'#fff',backgroundColor:'#8b352b',padding:{x:7,y:5}}).setOrigin(0.5);
     this.events.on('update', this.updateInterior, this);
+    this.events.once('shutdown', () => this.events.off('update', this.updateInterior, this));
   }
   drawCooler(g,x,y){g.fillStyle(0x155c91,1);g.fillRoundedRect(x,y,96,116,4);g.fillStyle(0x9cd1d6,1);g.fillRect(x+7,y+8,82,100);g.fillStyle(0x1e5277,1);g.fillRect(x+49,y+8,3,100);for(let r=0;r<4;r++){g.fillStyle(0xe4a736,1);g.fillRect(x+10,y+23+r*20,76,3);for(let c=0;c<5;c++){g.fillStyle([0xd93d2d,0xe6b331,0x42965a,0x4b8bb6][(c+r)%4],1);g.fillRect(x+13+c*14,y+10+r*20,8,11);}}}
   drawShelf(g,x,y,w,h){g.fillStyle(0x5b341e,1);g.fillRect(x,y,w,h);for(let r=0;r<5;r++){g.fillStyle(0x9b612e,1);g.fillRect(x,y+r*(h/5)+15,w,7);for(let c=0;c<Math.max(2,Math.floor(w/20));c++){g.fillStyle([0xd83b2e,0xe9b53b,0x45904a,0x477ca7][(r+c)%4],1);g.fillRect(x+5+c*18,y+2+r*(h/5),11,13);}}}
@@ -58,6 +59,6 @@ export class ColmadoInteriorScene extends Phaser.Scene {
   drawPlant(g,x,y){const pot=this.add.graphics();pot.fillStyle(0xb56c36,1);pot.fillPoints([{x:x-16,y:y-9},{x:x+16,y:y-9},{x:x+11,y:y+8},{x:x-11,y:y+8}],true);pot.fillStyle(0x278046,1);pot.fillCircle(x,y-19,13);pot.fillCircle(x-10,y-13,8);pot.fillCircle(x+10,y-13,8);}
   drawNpc(x,y){const n=this.add.graphics();n.fillStyle(0x36302a,1);n.fillRect(x-11,y-20,22,40);n.fillStyle(0xd99d70,1);n.fillCircle(x,y-29,12);n.fillStyle(0xe8d2a8,1);n.fillEllipse(x,y-39,26,7);n.fillRect(x-10,y-46,20,7);n.fillStyle(0x272321,1);n.fillRect(x-4,y-30,3,3);n.fillRect(x+3,y-30,3,3);}
   drawPlayer(c){const g=this.add.graphics();g.fillStyle(0x26372d,0.4);g.fillEllipse(0,13,20,7);g.fillStyle(0x29262b,1);g.fillRect(-7,2,6,13);g.fillRect(1,2,6,13);g.fillStyle(0x2768ab,1);g.fillRect(-9,-12,18,17);g.fillStyle(0xe2ae81,1);g.fillRect(-7,-26,14,14);g.fillStyle(0x30241e,1);g.fillRect(-8,-29,16,5);g.fillStyle(0x171b1c,1);g.fillRect(-7,-23,5,3);g.fillRect(2,-23,5,3);}
-  handleExitKey(event){if((event.code==='KeyE'||event.code==='Escape')&&this.player.y>500)this.scene.start('ExteriorScene');}
-  updateInterior(){const k=this.keys;let dx=0,dy=0;if(k.A.isDown||k.LEFT.isDown)dx--;if(k.D.isDown||k.RIGHT.isDown)dx++;if(k.W.isDown||k.UP.isDown)dy--;if(k.S.isDown||k.DOWN.isDown)dy++;const speed=3;if(dx&&dy){dx*=0.707;dy*=0.707;}this.player.x=Phaser.Math.Clamp(this.player.x+dx*speed,205,1075);this.player.y=Phaser.Math.Clamp(this.player.y+dy*speed,335,555);this.prompt.setVisible(this.player.y>525);this.exitButton.hidden=this.player.y<=500;if((Phaser.Input.Keyboard.JustDown(k.E)||Phaser.Input.Keyboard.JustDown(k.ESC))&&this.player.y>500)this.scene.start('ExteriorScene');}
+  handleExitKey(event){if((event.code==='KeyE'||event.code==='Escape')&&this.player.y>500)this.scene.start('ExteriorScene',{from:'colmado'});}
+  updateInterior(){const k=this.keys;let dx=0,dy=0;if(k.A.isDown||k.LEFT.isDown)dx--;if(k.D.isDown||k.RIGHT.isDown)dx++;if(k.W.isDown||k.UP.isDown)dy--;if(k.S.isDown||k.DOWN.isDown)dy++;const speed=3;if(dx&&dy){dx*=0.707;dy*=0.707;}this.player.x=Phaser.Math.Clamp(this.player.x+dx*speed,205,1075);this.player.y=Phaser.Math.Clamp(this.player.y+dy*speed,335,555);this.prompt.setVisible(this.player.y>525);this.exitButton.hidden=this.player.y<=500;if((Phaser.Input.Keyboard.JustDown(k.E)||Phaser.Input.Keyboard.JustDown(k.ESC))&&this.player.y>500)this.scene.start('ExteriorScene',{from:'colmado'});}
 }

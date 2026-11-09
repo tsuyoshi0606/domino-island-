@@ -17,4 +17,6 @@ const config = {
   scene: [ExteriorScene, ColmadoInteriorScene]
 };
 
-new Phaser.Game(config);
+const game = new Phaser.Game(config);
+// Dev-only hook so automated checks (and later multiplayer tests) can drive the scenes.
+if (import.meta.env.DEV) window.__DOMINO__ = game;
