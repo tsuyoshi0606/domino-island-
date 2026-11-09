@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="86" height="124" viewBox="0 0 86 124" shape-rendering="crispEdges">
+ <ellipse cx="43" cy="116" rx="27" ry="6" fill="#17221f" opacity=".45"/>
+ <!-- dark sneakers --> <path fill="#25252d" d="M25 97h14v15H22v-6zM48 97h14l5 12-4 4H47z"/><path fill="#f2eee4" d="M22 108h17v5H21zM48 109h18v5H48z"/>
+ <!-- loose charcoal pants --> <path fill="#272832" stroke="#16181d" stroke-width="3" d="M28 65h31l4 34H48l-4-18-4 18H25z"/><path fill="#41404a" d="M30 69h6v26h-6zM52 70h5v25h-5z"/>
+ <!-- printed black and amber streetwear shirt --> <path fill="#211f22" stroke="#151719" stroke-width="3" d="m27 43 15-6 17 6 8 28-12 6-2-10v17H32V67l-4 10-12-6z"/><path fill="#a36d3d" d="m30 49 5-3 3 4-4 3zM48 47l5 2-2 5-5-2zM39 57l5-3 4 4-4 4zM53 62l5-3 3 4-4 4zM28 62l4-2 3 4-5 3z"/>
+ <!-- neck and face --> <path fill="#a86642" d="M37 34h13v12H37z"/><path fill="#bd8056" stroke="#713f2e" stroke-width="3" d="M27 17q0-13 16-13t17 13v19q-8 12-17 12-10-1-16-12z"/>
+ <!-- long braided hair cap and braids --> <path fill="#171619" stroke="#08090b" stroke-width="3" d="M24 23Q21 3 43 2 65 3 63 24l-6 8-3-15-4 7-4-11-5 11-5-8-5 13z"/><g fill="#29252a" stroke="#0a0a0b" stroke-width="2"><path d="M24 18h5v30h-5l-3-6 4-4-4-4 4-4-4-4zM32 10h4v38h-4l-3-5 4-4-4-4 4-4-4-4 4-4-4-4zM43 6h4v42h-4l-3-5 4-4-4-4 4-4-4-4 4-4-4-4 4-4zM54 13h4v35h-4l-3-5 4-4-4-4 4-4-4-4 4-4-4-4zM61 22h4v24l-3 4h-4l4-5-4-4 4-4-4-4 4-4-4-4z"/></g>
+ <!-- sunglasses, nose, smile and jewelry --> <path fill="#090b0e" stroke="#5d5655" stroke-width="2" d="M28 26h14v7H29zM45 26h15v7H45z"/><path stroke="#171619" stroke-width="3" d="M41 29h5M43 34l-2 5 5 1"/><path stroke="#f2dfc5" stroke-width="2" d="M36 42q7 4 14 0"/><path fill="#f0d68b" d="M38 45h10v2H38zM42 48h3v5h-3z"/><path fill="#f4e4b9" d="m45 51 5 5-5 5-5-5z"/><path fill="#f0d68b" d="M38 49v7M53 49v7"/>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="190" height="152" viewBox="0 0 190 152" shape-rendering="crispEdges">
+ <ellipse cx="95" cy="131" rx="80" ry="13" fill="#1b2520" opacity=".38"/>
+ <!-- four plastic chairs --> <g stroke="#534b43" stroke-width="3"><path fill="#eee9da" d="M15 49h28v20H15zM16 41h26v9H16zM20 68v9m18-9v9"/><path fill="#eee9da" d="M147 49h28v20h-28zM148 41h26v9h-26zM152 68v9m18-9v9"/><path fill="#eee9da" d="M65 9h28v20H65zM66 1h26v9H66zM70 28v9m18-9v9"/><path fill="#eee9da" d="M98 9h28v20H98zM99 1h26v9H99zM103 28v9m18-9v9"/></g>
+ <!-- wooden pedestal table with tiled top --> <path fill="#6b4328" d="m95 53 8 4v49h-16V57z"/><path fill="#56351f" d="m78 101h35v8H78z"/><path fill="#593821" stroke="#2b211a" stroke-width="5" d="m33 49 62-32 64 32-64 33z"/><path fill="#9e6c3c" stroke="#e5c58e" stroke-width="3" d="m43 49 52-26 53 26-53 27z"/>
+ <!-- white dominoes with black pips --> <g fill="#f6ead3" stroke="#5f4933" stroke-width="2"><path d="m68 48 14-7 9 5-14 8z"/><path d="m91 58 14-7 9 5-14 8z"/><path d="m110 43 14-7 10 5-14 8z"/></g><g fill="#29211b"><circle cx="76" cy="49" r="1.8"/><circle cx="84" cy="47" r="1.8"/><circle cx="99" cy="60" r="1.8"/><circle cx="107" cy="57" r="1.8"/><circle cx="117" cy="44" r="1.8"/><circle cx="126" cy="42" r="1.8"/></g>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="320" viewBox="0 0 360 320" shape-rendering="crispEdges">
+  <!-- Ground shadow and raised paved parcel -->
+  <ellipse cx="180" cy="286" rx="151" ry="20" fill="#18241f" opacity=".34"/>
+  <path d="m180 207 148 45-148 55-148-55z" fill="#a77d46" stroke="#62482e" stroke-width="4"/>
+  <path d="m180 201 148 45-148 55-148-55z" fill="#edbd36" stroke="#785526" stroke-width="3"/>
+  <path d="m180 207 137 40-137 48-137-48z" fill="#dfc79f" stroke="#755b3d" stroke-width="3"/>
+  <g fill="none" stroke="#b2956f" stroke-width="2" opacity=".8">
+    <path d="m83 236 137 48m-91-73 137 48m-91-72 137 48m-199 1 137-48m-92 72 137-48m-92 73 137-48"/>
+  </g>
+  <!-- One-story concrete walls, with two perpendicular isometric faces -->
+  <path d="m72 108 108 56v74L72 181z" fill="#e5bd7c" stroke="#694b32" stroke-width="5"/>
+  <path d="m180 164 108-56v73l-108 57z" fill="#c18a4b" stroke="#694b32" stroke-width="5"/>
+  <path d="m78 170 102 53v14L78 185z" fill="#c69354"/>
+  <path d="m180 223 102-53v15l-102 53z" fill="#925e36"/>
+  <!-- Concrete slab roof; the four corners and wall corners share one perspective -->
+  <path d="m180 39 116 60-116 61L64 99z" fill="#d9c5a3" stroke="#564735" stroke-width="6"/>
+  <path d="m64 99 116 61 116-61v14l-116 63L64 113z" fill="#aa8962" stroke="#564735" stroke-width="3"/>
+  <g fill="none" stroke="#b39b79" stroke-width="2">
+    <path d="m96 116 116-60m-80 78 116-60m-80 78 116-60m-170-56 116 61m-80-79 116 61m-80-79 116 61"/>
+  </g>
+  <!-- Roof access hatch and water tank -->
+  <path d="m98 91 31-16 31 16-31 17z" fill="#98734c" stroke="#604932" stroke-width="3"/>
+  <path d="m111 88 18-10 18 10-18 10z" fill="#352f2b"/>
+  <path d="M219 59h40v24h-40z" fill="#29323a" stroke="#171e23" stroke-width="4"/>
+  <ellipse cx="239" cy="59" rx="20" ry="8" fill="#49545b" stroke="#171e23" stroke-width="3"/>
+  <path d="M219 59q0-15 20-15t20 15q-20 12-40 0z" fill="#252d34"/>
+  <!-- Barred front window and entry door -->
+  <path d="m87 123 32 17v33l-32-17z" fill="#253c46" stroke="#533b2b" stroke-width="4"/>
+  <path d="m92 127 22 12v24l-22-12z" fill="#73bdca"/>
+  <g fill="none" stroke="#20282b" stroke-width="3"><path d="m99 130v25m9-20v25m-16-12 23 13"/></g>
+  <path d="m139 151 25 13v48l-25-13z" fill="#70482e" stroke="#453021" stroke-width="4"/>
+  <path d="m145 158 13 7v39l-13-7z" fill="#8d5e39"/><circle cx="157" cy="187" r="2.5" fill="#f3d47d"/>
+  <path d="m207 165 31-16v32l-31 16z" fill="#243b45" stroke="#533b2b" stroke-width="4"/>
+  <path d="m212 168 21-11v22l-21 11z" fill="#72bdca"/>
+  <g fill="none" stroke="#20282b" stroke-width="3"><path d="m217 166v23m9-28v24m-14-8 22-12"/></g>
+  <!-- Short masonry fence, a centered gate and a clear path to the door -->
+  <path d="m37 249 13-8 24 12v11l-24-12-13 8zm235-2 25-12 26 8v11l-26-8-25 12z" fill="#c7aa7f" stroke="#5a4934" stroke-width="3"/>
+  <g fill="none" stroke="#41413c" stroke-width="3">
+    <path d="M45 247v25m13-18v24m13-18v23m206-35v25m13-30v24m13-28v22m-31-8 30-14m-286 34 29 15"/>
+  </g>
+  <path d="m180 285-19-10 19-10 19 10z" fill="#d1b184" stroke="#695238" stroke-width="3"/>
+  <path d="m180 270v-33" fill="none" stroke="#e8d4ad" stroke-width="12"/>
+  <path d="m180 270v-33" fill="none" stroke="#fff0cf" stroke-width="2"/>
+  <!-- A few planted beds stay behind the fence and outside the walking strip -->
+  <path d="m45 231 18-9 18 9-18 10z" fill="#a56f43"/><path d="m48 229 15-8 15 8-15 8z" fill="#2f7940"/>
+  <g fill="#e75782"><circle cx="56" cy="227" r="4"/><circle cx="65" cy="231" r="4"/><circle cx="73" cy="226" r="4"/></g>
+  <path d="m278 226 17-9 18 9-18 10z" fill="#a56f43"/><path d="m281 224 14-8 15 8-15 8z" fill="#2f7940"/>
+  <g fill="#e75782"><circle cx="288" cy="222" r="4"/><circle cx="297" cy="226" r="4"/><circle cx="305" cy="221" r="4"/></g>
+</svg>

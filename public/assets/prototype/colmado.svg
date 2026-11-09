@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="370" viewBox="0 0 480 370" shape-rendering="crispEdges">
+ <defs><linearGradient id="roof" x2="0" y2="1"><stop stop-color="#e8c99c"/><stop offset="1" stop-color="#b9946f"/></linearGradient><linearGradient id="glass" x2="0" y2="1"><stop stop-color="#4c9eb7"/><stop offset="1" stop-color="#153f57"/></linearGradient></defs>
+ <!-- deep cast shadow and raised stone base -->
+ <path fill="#121c19" opacity=".65" d="M24 275 240 164 459 278 240 355z"/><path fill="#b18c61" d="m35 257 205-107 205 107v18L240 383 35 275z"/><path fill="#f0bd32" d="m35 253 205-107 205 107v8L240 369 35 261z"/><path fill="#e8d1aa" d="m44 248 196-101 196 101-196 101z"/>
+ <!-- side wall and red storefront -->
+ <path fill="#22648a" stroke="#432a21" stroke-width="5" d="m240 179 178-92v138L240 319z"/><path fill="#af302b" stroke="#492820" stroke-width="5" d="m62 224 178-92v187L62 224z"/>
+ <!-- colorful tiled concrete roof -->
+ <path fill="url(#roof)" stroke="#624632" stroke-width="6" d="m40 132 200-104 200 104-200 105z"/>
+ <g fill="none" stroke="#a98766" stroke-width="2" opacity=".75"><path d="m74 150 199-104M110 170 310 66M147 190 347 86M184 210 383 106M221 229 420 125M100 100l200 104M140 79l200 104M180 60l200 104M221 40l200 104"/></g>
+ <!-- water tank and rooftop air unit -->
+ <g stroke="#20252a" stroke-width="5"><path fill="#202a32" d="M322 93h61v46h-61z"/><path fill="#303b43" d="M324 93q28-18 57 0v-6q-28-17-57 0z"/><path fill="#343e47" d="M325 87q0-12 28-13t29 13q-29 16-57 0z"/><path fill="#252c34" d="M126 105h45v26h-45z"/><path fill="#59636a" d="m126 105 13-14h44l-12 14z"/><path fill="#252c34" d="m171 105 12-14v26l-12 14z"/></g>
+ <!-- Dominican flag corner on the large shop sign -->
+ <path fill="#c62e29" stroke="#63251f" stroke-width="4" d="m112 151 128-67 128 67v36l-128 67-128-67z"/><path fill="#f5e8ca" d="m231 88 18-10v130l-18 10z"/><path fill="#225fa3" d="m114 149 115-60v42l-115 60z"/><path fill="#225fa3" d="m249 165 116-61v42l-116 61z"/><path fill="#fff1cf" d="m169 192 57-30v46l-57 30z"/><path fill="#fff1cf" d="m250 148 56-30v45l-56 30z"/>
+ <text x="240" y="158" text-anchor="middle" fill="#fff5dc" stroke="#702b22" stroke-width="3" paint-order="stroke" font-family="monospace" font-size="24" font-weight="bold">Colmado</text><text x="240" y="187" text-anchor="middle" fill="#fff5dc" stroke="#702b22" stroke-width="3" paint-order="stroke" font-family="monospace" font-size="24" font-weight="bold">Don Ramón</text>
+ <!-- storefront dark opening, visible stocked shelves -->
+ <path fill="#281b17" stroke="#6d3327" stroke-width="5" d="m81 231 157-83v122L81 352z"/><path fill="#184c68" d="m94 232 45-23v99l-45 23z"/><path fill="#184c68" d="m179 187 49-26v99l-49 26z"/>
+ <g stroke="#d59a49" stroke-width="4"><path d="m145 212 29-15v93l-29 15z"/><path d="m148 235 26-13M148 258l26-13M148 281l26-13"/><path d="m193 195 27-14v92l-27 14z"/><path d="m196 218 24-12M196 241l24-12M196 264l24-12"/></g>
+ <g fill="#f1b634"><path d="m103 245 9-5v10l-9 5zM117 238l9-5v10l-9 5zM103 267l9-5v10l-9 5zM117 260l9-5v10l-9 5zM103 289l9-5v10l-9 5zM117 282l9-5v10l-9 5z"/></g><g fill="#d64131"><path d="m151 222 8-4v10l-8 4zM162 216l8-4v10l-8 4zM151 246l8-4v10l-8 4zM162 240l8-4v10l-8 4zM198 207l8-4v10l-8 4zM209 201l8-4v10l-8 4z"/></g>
+ <!-- striped blue white awning -->
+ <path fill="#f4e8d0" stroke="#604333" stroke-width="3" d="m69 220 173-91v32L69 252z"/><g fill="#2472b8"><path d="m69 220 17-9v32l-17 9zM103 202l17-9v32l-17 9zM137 184l17-9v32l-17 9zM171 166l17-9v32l-17 9zM205 148l17-9v32l-17 9z"/></g>
+ <!-- side Presidente sign, coolers, crates and water jugs -->
+ <path fill="#18833e" stroke="#e5bf36" stroke-width="5" d="m284 211 93-49v77l-93 49z"/><circle cx="326" cy="221" r="20" fill="#f5f0d8" stroke="#d32e28" stroke-width="4"/><text x="326" y="227" text-anchor="middle" fill="#23733c" font-family="serif" font-size="18" font-weight="bold">P</text><text x="329" y="252" text-anchor="middle" fill="#fff4d3" font-family="serif" font-style="italic" font-size="14">Presidente</text>
+ <g stroke="#362921" stroke-width="4"><path fill="#16709b" d="m38 232 36-19v93l-36 19z"/><path fill="#69b6c5" d="m43 240 26-13v20l-26 13z"/><path fill="#315d77" d="m43 268 26-13v23l-26 13z"/><path fill="#16709b" d="m8 273 28-15v39L8 312z"/><path fill="#d94531" d="m13 264 25-13 28 14-28 15z"/><path fill="#2775ad" d="m13 303 25-13 28 14v20l-25 13-28-13z"/></g>
+ <g fill="#60b8d4" stroke="#276b91" stroke-width="3"><path d="M74 293q-13 8-13 32v20q0 11 15 11t15-11v-20q0-24-17-32z"/><path d="M101 282q-13 8-13 32v29q0 11 15 11t15-11v-29q0-24-17-32z"/></g>
+ <g fill="#e4a521" stroke="#74451f" stroke-width="3"><path d="m386 263 31-16 25 13v24l-31 16-25-13z"/><path d="m394 231 31-16 25 13v24l-31 16-25-13z"/></g>
+ <g fill="#f7d66b"><circle cx="116" cy="103" r="8"/><circle cx="366" cy="88" r="8"/></g>
+</svg>

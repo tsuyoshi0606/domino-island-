@@ -1,0 +1,12 @@
+* { box-sizing: border-box; }
+html, body, #game { width: 100%; height: 100%; margin: 0; overflow: hidden; background: #14271e; }
+#game { position: relative; }
+canvas { display: block; image-rendering: pixelated; }
+.game-hud { position: absolute; z-index: 10; top: 14px; left: 14px; max-width: min(680px, calc(100vw - 28px)); padding: 10px 12px; border: 2px solid #d9b971; border-radius: 5px; background: rgba(20, 31, 28, .94); color: #fff0d0; font: 600 13px/1.55 Consolas, monospace; white-space: pre-line; pointer-events: none; }
+.game-hud[data-status]::after { content: attr(data-status); display: block; margin-top: 6px; color: #b7e197; }
+.game-toolbar { position: absolute; z-index: 12; top: 112px; left: 14px; display: flex; flex-wrap: wrap; gap: 6px; max-width: min(900px, calc(100vw - 28px)); }
+.game-toolbar button { padding: 6px 9px; border: 1px solid #d9b971; border-radius: 4px; background: rgba(20, 31, 28, .94); color: #fff0d0; font: 700 12px Consolas, monospace; cursor: pointer; }
+.game-toolbar button:hover, .game-toolbar button:focus-visible { background: #a74a28; outline: 2px solid #fff0d0; }
+.game-prompt { position: absolute; z-index: 11; left: 50%; bottom: 22px; transform: translateX(-50%); padding: 9px 13px; border: 2px solid #efd496; border-radius: 5px; background: rgba(125, 45, 38, .96); color: #fff4d6; font: 700 14px/1.25 Consolas, monospace; cursor: pointer; pointer-events: auto; }
+.game-prompt:hover, .game-prompt:focus-visible { background: #a74a28; outline: 2px solid #fff0d0; }
+.game-prompt[hidden] { display: none; }
